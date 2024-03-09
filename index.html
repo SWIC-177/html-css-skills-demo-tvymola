@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,11 +8,20 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
   </head>
 
-  <header>
-    <h1>Tracy Duck</h1>
-    <h2>Future Web Developer</h2>
+  <header class="flex items-center gap-x-4 bg-white p-8 text-slate-900">
+    <img
+      src="img/Me.JPG"
+      alt=""
+      width="96"
+      height="96"
+      class="rounded-full shadow-lg shadow-slate-300"
+    /><!-- Remove the closing </img> tag -->
+    <div>
+      <h1 class="text-3xl font-semibold">Tracy Duck</h1>
+      <h2 class="font-thin">Future Web Developer</h2>
+    </div>
   </header>
-  <body>
+  <body class="bg-slate-900 text-white">
     <main>
       <p>
         I am currently learning to become a web developer. I am actively
@@ -100,8 +109,8 @@
         </div>
       </div>
     </main>
+    <footer>
+      <a href="mailto:tracy.duck@student.swic.edu">Email Me</a>
+    </footer>
   </body>
-  <footer>
-    <a href="mailto:tracy.duck@student.swic.edu">Email Me</a>
-  </footer>
 </html>
