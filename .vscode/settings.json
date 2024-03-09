@@ -8,6 +8,5 @@
   "editor.formatOnSave": true,
   "editor.wordWrap": "wordWrapColumn",
   "files.autoSave": "onFocusChange",
-  "files.eol": "\n",
-  "cSpell.words": ["stylelint"]
+  "files.eol": "\n"
 }
