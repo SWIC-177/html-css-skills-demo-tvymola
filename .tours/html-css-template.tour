@@ -4,17 +4,12 @@
   "steps": [
     {
       "file": ".vscode/extensions.json",
-      "description": "You should see a prompt in the bottom right **if** you are missing any of these extentions.",
+      "description": "You should see a prompt in the bottom right **if** you are missing any of these extensions.",
       "line": 2
     },
     {
       "file": ".vscode/settings.json",
       "description": "Summarily, these settings automate the process of saving and formatting your code.",
-      "line": 1
-    },
-    {
-      "file": ".stylelintrc.json",
-      "description": "This is a linter that helps enforce 'best practices' whenever you are writing CSS 💄.",
       "line": 1
     },
     {

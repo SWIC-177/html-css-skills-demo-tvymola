@@ -2,7 +2,7 @@
 export default {
   content: ["./index.html"],
   theme: {
-    extend: {},
+    extend: {}, // Remove the empty object
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
