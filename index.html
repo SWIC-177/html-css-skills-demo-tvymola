@@ -8,7 +8,9 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
   </head>
 
-  <header class="flex items-center gap-x-4 bg-white p-8 text-slate-900">
+  <header
+    class="flex items-center justify-center gap-x-4 bg-white p-8 text-slate-900"
+  >
     <img
       src="img/Me.JPG"
       alt=""
@@ -21,9 +23,9 @@
       <h2 class="font-thin">Future Web Developer</h2>
     </div>
   </header>
-  <body class="bg-slate-900 text-white *:p-8">
-    <main>
-      <section class="*:mb-4">
+  <body class="bg-slate-900 tracking-wide text-white">
+    <main class="py-4">
+      <section class="*:mb-4 *:px-8">
         <h2 class="underline-offset-3 text-2xl font-medium underline">
           About Me
         </h2>
@@ -54,36 +56,28 @@
         </p>
       </section>
 
-      <form>
-        <fieldset>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" /><br /><br />
+      <form
+        class="container mx-auto flex max-w-screen-md flex-col gap-y-4 px-8 py-4 *:rounded md:grid md:grid-cols-2 [&>input]:min-h-12 [&>label]:sr-only"
+      >
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" />
 
-          <label for="reason">Reason:</label>
-          <select id="reason" name="reason">
-            <option value="general">General</option>
-            <option value="development services">Development Services</option>
-            <option value="gardening advice">Gardening Advice</option>
-            <option value="work related">Work Related</option>
-            <option value="dog advice">Dog Advice</option></select
-          ><br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="📧" />
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" /><br /><br />
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" placeholder="📞" />
 
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone" /><br /><br />
-        </fieldset>
-        <label for="message">Message:</label><br /><br />
-        <textarea id="message" name="message" rows="10" cols="40"></textarea
-        ><br /><br /><br />
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Type your message here"></textarea>
 
-        <input type="button" value="Submit" />
+        <button
+          type="submit"
+          class="col-span-2 mt-4 h-12 max-w-min place-self-center bg-green-500 px-4 py-2 text-white"
+        >
+          Submit
+        </button>
       </form>
-
-      <br />
-      <br />
-      <br />
 
       <div>
         <div>
@@ -105,7 +99,6 @@
           <img src="img/Gus and Bella.JPEG" alt="Dogs Looking For Food" />
         </div>
         <div><img src="img/Gus.jpeg" alt="My Gus" /></div>
-        <div><img src="img/Me.JPG" alt="Me" /></div>
         <div>
           <img src="img/seedling.JPG" alt="Grown From Seed" />
         </div>
@@ -114,7 +107,8 @@
         </div>
       </div>
     </main>
-    <footer>
+
+    <footer class="divide-x border-t-2 border-white p-8">
       <a href="mailto:tracy.duck@student.swic.edu">Email Me</a>
     </footer>
   </body>
